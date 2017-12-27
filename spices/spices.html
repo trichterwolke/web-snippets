@@ -6,11 +6,12 @@
     <style>
         body {
             margin: 0;
+            display: grid;
+            grid-template-columns: auto auto;
         }
 
         div.container {
             position: relative;
-            top: 50%;
             width: 300px;
             height: 150px;
             margin: 20px;
@@ -29,17 +30,8 @@
         div.name {
             font-family: Cookie;
             font-size: 3em;
-            /*margin: 0;*/
-        }
-/*
-        p.name.hasType {
-            margin-top: 80px;
         }
 
-        p.name.hasNotType {
-            margin-top: 100px;
-        }
-*/
         div.type {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 1.5em;
@@ -97,7 +89,7 @@
                 $("body").append(
                     '<div class="container">' +
                     '<div class="content">' +
-                    '<div class="name ' + hasType + '">' + spice.name + '</div>' +
+                    '<div class="name">' + spice.name + '</div>' +
                     '<div class="type ' + hasType + '">' + spice.type + '</div>' +
                     '</div>' +
                     "</div>"
