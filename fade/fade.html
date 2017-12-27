@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div.container {
+            opacity: 0;
+            position: absolute;
+        }
+
+        div.first {
+            animation: fadein 2s ease-in 0s forwards;
+        }
+
+        div.second {
+            animation: fadein 2s ease-in 3s forwards;
+        }
+
+        div.third {
+            animation: fadein 2s ease-in 6s forwards;
+        }
+
+        div.fourth {
+            animation: fadein 2s ease-in 9s forwards;
+        }
+
+        .image {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        div.content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 90px;
+            font-family: Cookie;
+            color: white;
+            text-shadow: 
+                0 0 5px black,
+                0 0 10px black,
+                0 0 20px black;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container first">
+        <image class="image" src="img/mountain.jpeg" alt="Mountain"></image>
+        <div class="content">
+            Mountains
+        </div>
+    </div>
+    <div class="container second">
+        <image class="image" src="img/tent.jpeg" alt="Tent"></image>
+        <div class="content">
+            Tent
+        </div>
+    </div>
+    <div class="container third">
+        <image class="image" src="img/shoe.jpeg" alt="Shoe"></image>
+        <div class="content">
+            Shoe
+        </div>
+    </div>
+    <div class="container fourth">
+        <image class="image" src="img/hill.jpeg" alt="Hill"></image>
+        <div class="content">
+            Hills
+        </div>
+    </div>
+</body>
+
+</html>
