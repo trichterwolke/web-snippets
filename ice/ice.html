@@ -14,21 +14,37 @@
         body {
             background: url("../resources/backgrounds/rocks.jpg") fixed no-repeat;
             background-size: cover;
-            padding: 10px;
+            padding: 2vw;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 2vw;
         }
 
         .container {
+            width: 45vw;
+            height: 45vw;
             display: inline-block;
             background: inherit;
             position: relative;
             overflow: hidden;
-            font-size: 4em;
+            font-size: 6vw;
             color: white;
-            padding: 150px;
-            margin: 10px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),
             0 6px 20px 0 rgba(0, 0, 0, 0.3);
         }
+
+        @media screen and (min-width: 1024px) {
+            .container {
+                width: 30vw;
+                height: 30vw;
+                font-size: 4vw;
+            }
+
+            body {
+                grid-template-columns: auto auto auto;
+            }
+        }
+
 
         .container::before {
             width: calc(100% + 10px);
@@ -66,7 +82,7 @@
     </div>
     <div class="container">
         <div class="content">
-            Dolor sit 
+            Dolor sit
         </div>
     </div>
     <div class="container">
