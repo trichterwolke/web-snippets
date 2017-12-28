@@ -1,47 +1,98 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <style>
-        body {
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+        * {
             margin: 0;
+            padding: 0;
+            font-family: Roboto;
+            font-weight: 100;
+            padding: 10px;
         }
 
-        div.container {
+        body {
+            height: 100vh;
+            background: url("img/rocks.jpeg") fixed no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            display: inline-block;
+            background: inherit;
             position: relative;
+            overflow: hidden;
+            font-size: 3em;
+            color: white;
+            padding: 100px;
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),
+            0 6px 20px 0 rgba(0, 0, 0, 0.3);
         }
 
-        .image {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        div.content {
+        .container::before {
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+            content: "";
             position: absolute;
-            top: 50%;
+            top: -5px;
+            left: -5px;
+            bottom: 0;
+            right: 0;
+            background: inherit;
+            filter: blur(5px);
+        }
+
+        .content {
+            text-align: center;
+            position: absolute;
             left: 50%;
-            font-size: 90px;
-            font-family: Montserrat;
+            top: 50%;
             transform: translate(-50%, -50%);
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(20px);
-            /**/
         }
-
-        div.content::after {
-            content: '';
-            filter: blur(20px);
-        }
-
     </style>
 </head>
 
 <body>
     <div class="container">
-        <image class="image" src="img/house.jpg" alt="House"></image>
         <div class="content">
-            Hot fried chips
+            Blur
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            Shadow
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            Blur
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            Shadow
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            Blur
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            Shadow
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            Shadow blur
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            Blur
         </div>
     </div>
 </body>
