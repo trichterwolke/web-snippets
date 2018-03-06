@@ -1,0 +1,113 @@
+/*
+    light beige #F2E8D5
+    beige #403828
+    dark beige #E0C89B
+    dark brown #3D3525
+    brown #403828
+    red #C44230
+    light red #D06B59
+    orange #39B54A
+    green #39B54A
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+body {
+    font-family: Roboto;
+    font-size: 18px;
+    margin: 0;
+    background: #E0C89B;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    text-decoration: underline;
+}
+
+.active {
+   text-decoration: underline;
+}
+
+div.grid-container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto 1000px auto;
+    grid-template-rows: 100px 200px 500px 50px;
+}
+
+ul.grid-top-center {
+    color: white;
+    background-color: #3D3525;
+    grid-column: span 3;
+}
+
+div.grid-top-left {
+    color: white;
+    background-color: #3D3525;
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+div.grid-top-right {
+    color: white;
+    background-color: #3D3525;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+div.grid-body {
+    background-color: #F2E8D5;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row: span 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button.btn-round {
+    width: 72px;
+    height: 72px;
+    margin: -36px 0;
+    position: relative;
+    grid-row-start: 3;
+    grid-column-start: 3;
+    bottom: 0;
+    border-style: none;
+    border-radius: 50%;
+    background: #C44230;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button.btn-save {
+    left: calc(33% - 48px);
+}
+
+button.btn-load {
+    left: calc(66% - 24px);
+}
+
+button.btn-round:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+button.btn-round:active {
+    background: #D06B59;
+}
