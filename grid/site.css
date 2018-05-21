@@ -32,18 +32,18 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .active {
-   text-decoration: underline;
+    color: rgba(255, 255, 255, 1);
 }
 
 div.grid-container {
